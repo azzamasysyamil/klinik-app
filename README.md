@@ -1,4 +1,4 @@
-KLINIK APP BY MUHAMMAD AZZAM ASY SYAMIL
+## Tugas Klinik App Muhammad Azzam Asy Syamil
 
 - Welcome Page
 - Dashboard Page
