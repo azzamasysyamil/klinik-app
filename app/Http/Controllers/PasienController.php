@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pasien;
 use Illuminate\Http\Request;
 
 class PasienController extends Controller
@@ -11,7 +12,7 @@ class PasienController extends Controller
      */
     public function index()
     {
-        $pasien = \App\Models\Pasien::latest()->paginate(10);
+        $pasien = Pasien::latest()->paginate(10);
         $data['pasien'] = $pasien;
         return view('pasien_index', $data);
     }
@@ -21,7 +22,7 @@ class PasienController extends Controller
      */
     public function create()
     {
-        //
+        return view('pasien_create');
     }
 
     /**
@@ -29,7 +30,20 @@ class PasienController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $requestData = $request->validate([
+            'no_pasien'     => 'required|unique:pasiens,no_pasien',
+            'nama'          => 'required',
+            'umur'          => 'required|numeric',
+            'jenis_kelamin' => 'required|in:laki-laki,perempuan',
+            'alamat'        => 'nullable',        
+            'foto'          => 'required|image|mimes:jpeg,png,jpg|max:5000',
+        ]);
+        $pasien = new Pasien(); 
+        $pasien->fill($requestData); 
+        $pasien->foto = $request->file('foto')->store(); 
+        $pasien->save();
+        return redirect('/pasien')->with('pesan', 'Data sudah disimpan');
+
     }
 
     /**

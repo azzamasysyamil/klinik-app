@@ -19,6 +19,9 @@
 </head>
 
 <body>
+
+
+    
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -96,6 +99,11 @@
         </nav>
 
         <main class="py-4">
+            @if (session()->has('pesan'))
+                <div class=" container alert alert-info" role="alert">
+                    {{ session('pesan') }}
+                </div>
+            @endif
             @yield('content')
         </main>
     </div>

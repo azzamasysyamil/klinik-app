@@ -16,7 +16,7 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>NO</th>
+                                        <th>No</th>
                                         <th>No Pasien</th>
                                         <th>Nama</th>
                                         <th>Jenis Kelamin</th>
@@ -36,7 +36,8 @@
                                             </td>
                                             <td>{{ $item->jenis_kelamin }}</td>
                                             <td>{{ $item->umur }}</td>
-                                            <td>{{ $item->foto }}</td>
+                                            {{  $foto=$item->foto ? $item->foto : 'AT1.png' }}
+                                            <td><img src="../storage/images/{{  $foto }}" alt="foto" width="100px"></td>
                                             <td>{{ $item->alamat }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-warning">Edit</button>
