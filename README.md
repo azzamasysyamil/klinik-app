@@ -3,3 +3,5 @@
 - Welcome Page
 - Dashboard Page
 - Daftar Data Pasien
+- Tambah data dengan foto
+- Tambah data tanpa foto
