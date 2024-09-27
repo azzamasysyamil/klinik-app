@@ -36,7 +36,7 @@
                                             </td>
                                             <td>{{ $item->jenis_kelamin }}</td>
                                             <td>{{ $item->umur }}</td>
-                                            {{  $foto=$item->foto ? $item->foto : 'AT1.png' }}
+                                            <?php  $foto=$item->foto ? $item->foto : 'AT1.svg' ?>
                                             <td><img src="../storage/images/{{  $foto }}" alt="foto" width="100px"></td>
                                             <td>{{ $item->alamat }}</td>
                                             <td>
