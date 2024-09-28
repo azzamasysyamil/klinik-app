@@ -1,6 +1,6 @@
 # Aplikasi Klinik
 
-# Oleh Muhammad Azzam Asy Syamil
+## Oleh Muhammad Azzam Asy Syamil
 
 ### Pertemuan 8
 * Tambah Data
