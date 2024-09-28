@@ -1,5 +1,11 @@
-## Tugas Klinik App Muhammad Azzam Asy Syamil
+# Aplikasi Klinik
 
-- Welcome Page
-- Dashboard Page
-- Daftar Data Pasien
+# Oleh Muhammad Azzam Asy Syamil
+
+### Pertemuan 8
+- Tambah Data
+-- minus foto
+
+### Pertemuan 9 - PSTS
+Hapus data dan Edit data
+-- minus gambar belum berhasil

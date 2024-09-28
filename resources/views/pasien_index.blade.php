@@ -39,9 +39,18 @@
                                             <?php  $foto=$item->foto ? $item->foto : 'AT1.svg' ?>
                                             <td><img src="../storage/images/{{  $foto }}" alt="foto" width="100px"></td>
                                             <td>{{ $item->alamat }}</td>
-                                            <td>
-                                                <button type="button" class="btn btn-warning">Edit</button>
-                                                <button type="button" class="btn btn-danger">Remove</button>
+                                            <td style="min-width: 200px">
+                                                <a href="/pasien/{{ $item->id }}/edit" class="btn btn-warning btn-sm ml-2">Edit</a>&nbsp
+                                                <form action="/pasien/{{  $item->id }}" method="post" class="d-inline">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button class="btn btn-danger btn-sm ml-2" onclick="return confirm('Yakin ingin menghapus data?')">Hapus
+                                                    </button>
+                                                </form>
+                                                                                         
+
+                                                {{-- <button type="button" class="btn btn-warning">Edit</button>
+                                                <button type="button" class="btn btn-danger">Remove</button> --}}
                                                 
                                             </td>
                                         </tr>
