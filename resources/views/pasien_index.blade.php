@@ -1,11 +1,11 @@
 <div>
-    @extends('layouts.app', ['title' => 'Data Pasien'])
+    @extends('layouts.app_modern', ['title' => 'Data Pasien'])
     @section('content')
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header">Form Pasien</div>
+                        {{-- <div class="card-header">Form Pasien</div> --}}
                         <div class="card-body">
                             <h3>Data pasien</h3>
                             <div class="row mb-3 mt-3">

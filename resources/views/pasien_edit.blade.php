@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Edit Data Pasien'])
+@extends('layouts.app_modern', ['title' => 'Edit Data Pasien'])
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -14,7 +14,7 @@
                                 <input type="file" class="form-control @error('foto') is-invalid @enderror"
                                     id="foto" name="foto">
                                 <span class="text-danger">{{ $errors->first('foto') }}</span>
-                                <img src="/storage/images/{{  $pasien->foto }}" width="300">
+                                <img src="/storage/images/{{  $pasien->foto }}" width="300" class="rounded mt-3 shadow">
                             </div>
                             <div class="form-group mt-1 mb-3">
                                 <label for="nama">Nama Pasien</label>

@@ -1,10 +1,10 @@
-@extends('layouts.app', ['title' => 'Tambah Data Pasien'])
+@extends('layouts.app_modern', ['title' => 'Tambah Data Pasien'])
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Form Pasien</div>
+                    {{-- <div class="card-header">Form Pasien</div> --}}
                     <div class="card-body">
                         <h5 class="card-title">Tambah Data Pasien</h5>
                         <form action="/pasien" method="POST" enctype="multipart/form-data">
