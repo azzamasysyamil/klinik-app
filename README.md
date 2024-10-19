@@ -9,3 +9,11 @@
 ### Pertemuan 9 - PSTS
 * Hapus data dan Edit data
     * minus gambar belum berhasil
+      
+### Pertemuan 10
+* CRUD Poli
+    * Tambah Data
+    * Edit Data
+    * Hapus Data
+* CRUD Index
+
