@@ -60,6 +60,26 @@
                 <span class="hide-menu">Tambah</span>
               </a>
             </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">POLI</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/poli" aria-expanded="false">
+                  <span>
+                      <i class="ti ti-building"></i>
+                  </span>
+                  <span class="hide-menu">Poli</span>
+              </a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="../poli/create" aria-expanded="false">
+              <span>
+                <i class="ti ti-plus"></i>
+              </span>
+              <span class="hide-menu">Tambah</span>
+            </a>
+          </li>
             
 
             <li class="nav-small-cap">
@@ -67,19 +87,28 @@
                 <span class="hide-menu">Keluar</span>
               </li>
               <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                  <span>
+                    <i class="ti ti-trash"></i>
+                  </span>
+                  <span class="hide-menu">Logout</span>
+                </a>
+              </li>
+
+              {{-- <li class="sidebar-item">
                 <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     Logout
-                </a>
+                </a> --}}
                 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
                 </form>
                   <span>
                     <i class="ti ti-alert-circle"></i>
                   </span>
                   <span class="hide-menu">Logout</span>
-                </a>
-              </li>
+                </a> --}}
+              {{-- </li> --}}
           </ul>
           
         </nav>
