@@ -1,5 +1,5 @@
 <div>
-    @extends('layouts.app_modern', ['title' => 'Data Pasien'])
+    @extends('layouts.app_modern', ['title' => 'Data Poli'])
     @section('content')
         <div class="container">
             <div class="row justify-content-center">
@@ -7,10 +7,12 @@
                     <div class="card">
                         {{-- <div class="card-header">Form Pasien</div> --}}
                         <div class="card-body">
-                            <h3>Data pasien Poli</h3>
                             <div class="row mb-3 mt-3">
                                 <div class="col-md-6">
-                                    <a href="/poli/create" class="btn btn-primary btn-sm">Tambah Pasien Poli</a>
+                                <h3>Data Poli</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="/poli/create" class="btn btn-primary btn-sm float-end">Tambah Poli</a>
                                 </div>
                             </div>
                             <table class="table table-striped">
@@ -29,7 +31,7 @@
                                             <td>
                                                 {{ $item->nama }}
                                             </td>
-                                            <td>{{ $item->biaya }}</td>
+                                            <td>@currency($item->biaya) </td>
                                             <td style="min-width: 200px">
                                                 <a href="/poli/{{ $item->id }}/edit" class="btn btn-warning btn-sm ml-2">Edit</a>&nbsp
                                                 <form action="/poli/{{  $item->id }}" method="post" class="d-inline">

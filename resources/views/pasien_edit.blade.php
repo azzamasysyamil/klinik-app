@@ -56,8 +56,10 @@
                                     id="alamat" name="alamat" value="{{ old('alamat') ?? $pasien->alamat }}">
                                 <span class="text-danger">{{ $errors->first('alamat') }}</span>
                             </div>
-                            <button type="reset" class="btn btn-warning">Reset</button> &nbsp;
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <div class="form-group mt-1 mb-3 float-end">
+                                <button type="reset" class="btn btn-warning">Reset</button> &nbsp;
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </div>
                         </form>
                     </div>
                 </div>

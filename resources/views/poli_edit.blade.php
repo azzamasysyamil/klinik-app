@@ -1,4 +1,4 @@
-@extends('layouts.app_modern', ['title' => 'Edit Data  Poli'])
+@extends('layouts.app_modern', ['title' => 'Edit Data Poli'])
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -21,9 +21,10 @@
                                     id="biaya" name="biaya" value="{{ old('biaya') ?? $poli->biaya }}">
                                 <span class="text-danger">{{ $errors->first('biaya') }}</span>
                             </div>
-                            
-                            <button type="reset" class="btn btn-warning">Reset</button> &nbsp;
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <div class="form-group mt-1 mb-3 float-end">
+                                <button type="reset" class="btn btn-warning">Reset</button> &nbsp;
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </div>
                         </form>
                     </div>
                 </div>

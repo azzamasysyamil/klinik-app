@@ -7,10 +7,12 @@
                     <div class="card">
                         {{-- <div class="card-header">Form Pasien</div> --}}
                         <div class="card-body">
-                            <h3>Data pasien</h3>
                             <div class="row mb-3 mt-3">
                                 <div class="col-md-6">
-                                    <a href="/pasien/create" class="btn btn-primary btn-sm">Tambah Pasien</a>
+                                    <h3>Data Pasien</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="/pasien/create" class="btn btn-primary btn-sm float-end">Tambah Pasien</a>
                                 </div>
                             </div>
                             <table class="table table-striped">

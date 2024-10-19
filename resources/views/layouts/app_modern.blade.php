@@ -18,8 +18,8 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
-            <img src="/modern/src/assets/images/logos/dark-logo.svg" width="180" alt="" />
+          <a href="../home" class="text-nowrap logo-img">
+            <img src="/modern/src/assets/images/logos/logo.png" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -65,7 +65,7 @@
               <span class="hide-menu">POLI</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/poli" aria-expanded="false">
+              <a class="sidebar-link" href="../poli" aria-expanded="false">
                   <span>
                       <i class="ti ti-building"></i>
                   </span>
