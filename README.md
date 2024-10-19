@@ -10,7 +10,7 @@
 * Hapus data dan Edit data
     * minus gambar belum berhasil
       
-### Pertemuan 10
+### Pertemuan 11
 * CRUD Poli
     * Tambah Data
     * Edit Data
