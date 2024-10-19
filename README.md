@@ -1,11 +1,11 @@
 # Aplikasi Klinik
 
 ## Oleh Muhammad Azzam Asy Syamil
+      
+### Pertemuan 11
+* CRUD Poli
+    * Tambah Data
+    * Edit Data
+    * Hapus Data
+* CRUD Index
 
-### Pertemuan 8
-* Tambah Data
-    * minus foto
-
-### Pertemuan 9 - PSTS
-* Hapus data dan Edit data
-    * minus gambar belum berhasil
