@@ -30,7 +30,7 @@
           <ul id="sidebarnav">
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Home</span>
+              <span class="hide-menu">Beranda</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/home" aria-expanded="false">
@@ -40,6 +40,22 @@
                 <span class="hide-menu">Dashboard</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link {{ request()->is('daftar*') ? 'active' : '' }}" href="/daftar" aria-expanded="false">
+                <span>
+                  <i class="ti ti-clipboard"></i>
+                </span>
+                <span class="hide-menu">Pendaftaran</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/pengguna" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Pengguna</span>
+              </a>
+            </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">DATA PASIEN</span>
@@ -47,7 +63,7 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="../pasien" aria-expanded="false">
                 <span>
-                  <i class="ti ti-list"></i>
+                  <i class="ti ti-heart"></i>
                 </span>
                 <span class="hide-menu">Pasien</span>
               </a>
@@ -67,7 +83,7 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="../poli" aria-expanded="false">
                   <span>
-                      <i class="ti ti-building"></i>
+                      <i class="ti ti-star"></i>
                   </span>
                   <span class="hide-menu">Poli</span>
               </a>

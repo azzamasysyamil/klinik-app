@@ -8,11 +8,17 @@
                         {{-- <div class="card-header">Form Pasien</div> --}}
                         <div class="card-body">
                             <div class="row mb-3 mt-3">
-                                <div class="col-md-6">
-                                <h3>Data Poli</h3>
+                                <div class="col-md-3 h3">
+                                    Data Poli
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="/poli/create" class="btn btn-primary btn-sm float-end">Tambah Poli</a>
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="text" name="pl" placeholder="Cari Nama, No Pasien atau Poli" value="{{ request('pl') }}" aria-label="Search">
+                                        <button class="btn btn-outline-primary" type="submit">Cari</button>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="/poli/create" class="btn btn-primary btn-md float-end">Tambah Data</a>
                                 </div>
                             </div>
                             <table class="table table-striped">

@@ -13,7 +13,11 @@ class PasienController extends Controller
      */
     public function index()
     {
-        $pasien = Pasien::latest()->paginate(10);
+        if (request()->has('p')) {
+            $pasien = Pasien::search(request('p'))->paginate(20);
+        } else {
+           $pasien = Pasien::orderBy('nama', 'ASC')->paginate(10);
+        }
         $data['pasien'] = $pasien;
         return view('pasien_index', $data);
     }
