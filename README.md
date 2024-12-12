@@ -23,3 +23,9 @@
 ### Pertemuan 13
 * Penyelesaia CRUD Poli
     * CRUD Users
+
+## Pertemuan 15
+* Penyelesaian CRUD Pendaftaran
+    * Tambah Daftar
+    * Detail Daftar
+    * Hapus Daftar
