@@ -10,22 +10,22 @@
 - [x] Menu
 
 #### 👤 Pasien
-- [x]Lihat Pasien
-- [x]Tambah Pasien (Dengan/Tanpa Foto )
-- [x]Edit Pasien
-- [x]Hapus Pasien
+- [x] Lihat Pasien
+- [x] Tambah Pasien (Dengan/Tanpa Foto )
+- [x] Edit Pasien
+- [x] Hapus Pasien
 
 #### 🌻 Poli
-- [x]Lihat Poli
-- [x]Tambah Poli
-- [x]Edit Poli
-- [x]Hapus Poli
+- [x] Lihat Poli
+- [x] Tambah Poli
+- [x] Edit Poli
+- [x] Hapus Poli
 
 #### 📝 Pendaftaran
-- [x]Lihat Pendaftaran
-- [x]Tambah Pendaftaran
-- [x]Detail Pendaftaran
-- [x]Hapus Pendaftaran
+- [x] Lihat Pendaftaran
+- [x] Tambah Pendaftaran
+- [x] Detail Pendaftaran
+- [x] Hapus Pendaftaran
 
 ## 📜 Update Log Fitur
 #### Pertemuan 8
