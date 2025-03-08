@@ -57,5 +57,5 @@
     * Hapus Daftar
 
 ## 📐 Google Slides
-https://bit.ly/klinik-app
+https://docs.google.com/presentation/d/1GtbeF4n4iSsDP0OGONw28iVTIMfwtwnpUcbSwo8x-zQ/edit?usp=sharing
 
